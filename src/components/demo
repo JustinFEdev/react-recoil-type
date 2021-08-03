@@ -1,0 +1,33 @@
+// import React, { useEffect } from 'react';
+// import { atom, useRecoilState, useRecoilValue } from 'recoil';
+
+// const reposState = atom({
+//     key: 'item',
+//     default: [],
+// });
+
+// export const view = atom({
+//     key: 'view',
+//     default: 'monthly',
+// });
+
+// const [item, setItem] = useRecoilState(reposState);
+// // const view = useRecoilValue(viewAtom);
+
+// useEffect(() => {
+//     const getRepos = async () => {
+//         const url = `https://ghapi.huchen.dev/repositories?since=monthly`;
+//         const resp = await fetch(url);
+//         const body = await resp.json();
+//         setItem(body);
+//         console.log(body);
+//     };
+//     getRepos();
+// }, [view]);
+
+/* <div key={repo.url}>
+                <a href={repo}>
+                    {repo.author}/ {repo.name}
+                </a>
+                <div>{repo.description}</div>
+            </div> */

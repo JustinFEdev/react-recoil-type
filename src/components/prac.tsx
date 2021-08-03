@@ -1,17 +1,44 @@
 import React from 'react';
+import '../App.css';
+import { ISstate as Props } from '../App';
 
-const prac = () => {
-    function add(a: number, b: number) {
-        return a + b;
-    }
-    console.log(add(3, 5));
+interface IProps {
+    test: Props['test'];
+}
+
+const prac: React.FC<IProps> = ({ test }) => {
+    const renderList = (): JSX.Element[] => {
+        return test.map((personInfo) => {
+            return (
+                <>
+                    <li className="List">
+                        <div className="List-header">
+                            <img
+                                className="List-img"
+                                src={personInfo.img}
+                                alt=""
+                            />
+                            <h2>{personInfo.name}</h2>
+                        </div>
+                        <p>{personInfo.age} years old</p>
+                        <p className="List-note">
+                            {personInfo.note}
+                        </p>
+                    </li>
+                </>
+            );
+        });
+    };
 
     return (
         <>
-            <header>Welcome to React + typeScript + Recoil</header>
-            <h1>징그러운 세팅..</h1>
+            <header>
+                Welcome to React + typeScript + Recoil
+            </header>
+            <ul>
+                <div>{renderList()}</div>
+            </ul>
         </>
     );
 };
-
 export default prac;

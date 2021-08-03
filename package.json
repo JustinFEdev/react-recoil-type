@@ -60,7 +60,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wj1089/react_project.git"
+    "url": "git+https://github.com/JustinFEdev/react-recoil-type.git"
   },
   "author": "",
   "license": "ISC",

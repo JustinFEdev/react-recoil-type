@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## change. nvm use v14.17.3
 
+## https://github.com/harblaith7/React-With-TypeScript-Crash-Course/tree/main/src 참고 자료
+
 ## Available Scripts
 
 In the project directory, you can run:
