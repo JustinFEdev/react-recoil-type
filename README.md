@@ -59,3 +59,5 @@ eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMjdiNzE2NmViNjBlYWRiNWMzNTgyOWRmYTZlMTE2NCIsInN
 
 관련 홈페이지 주소:
 https://www.themoviedb.org/settings/api
+
+"homepage": "https://github.com/wj1089/react_project"

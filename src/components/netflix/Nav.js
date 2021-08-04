@@ -1,27 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './netflix.css';
+import netflixLogo from '../../resource/images/Netflix_Logo_RGB.png';
 
 const Nav = () => {
+    const [show, handleShow] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                handleShow(true);
+            } else handleShow(false);
+        });
+        return () => {
+            window.removeEventListener('scroll');
+        };
+    }, []);
     return (
-        <div className="nav">
-            <img
-                className="nav-logo"
-                src="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=30"
-                alt="Netflix Logo"
-            />
+        <div className={`nav ${show && 'nav_black'}`}>
+            <img className="nav-logo" src={netflixLogo} alt="Netflix Logo" />
             <img
                 className="nav-avator"
                 src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
                 alt="Netflix Logo"
             />
-            <div style={{ position: 'absolute', left: '30%' }}>
-                <a href="/">
-                    <img
-                        alt="goback"
-                        src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-icon%2Fgo-back-arrow_754899.htm&psig=AOvVaw35GAUrHsWZmfwcbCLV4aSp&ust=1628148921977000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIClucntlvICFQAAAAAdAAAAABAP"
-                    />
-                </a>
-            </div>
+            {/* <div> */}
+            <a href="/" className="netflix-goback">
+                <h2 className="netflix-goback-text">Main</h2>
+                <img
+                    className="netflix-goback-img"
+                    alt="goback"
+                    src="https://image.flaticon.com/icons/png/512/13/13964.png"
+                />
+            </a>
+            {/* </div> */}
         </div>
     );
 };
