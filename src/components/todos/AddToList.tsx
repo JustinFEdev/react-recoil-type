@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ISstate as Props } from '../App';
+import { ISstate as Props } from './Todos';
 
 interface IProps {
     test: Props['test'];

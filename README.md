@@ -48,3 +48,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## 넷플릭스 API key : e27b7166eb60eadb5c35829dfa6e1164
+
+## 넷플릭스 API 액세스 토큰 :
+
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMjdiNzE2NmViNjBlYWRiNWMzNTgyOWRmYTZlMTE2NCIsInN1YiI6IjYxMDlmYTc3NjMzMWIyMDA1ZDFiNzExMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dDMGf-4Q74-iNh9TaKunYjbIoneAlsMLnXfGqgG-8Zg
+
+# API 요청 예 : https://api.themoviedb.org/3/movie/550?api_key=e27b7166eb60eadb5c35829dfa6e1164
+
+관련 홈페이지 주소:
+https://www.themoviedb.org/settings/api

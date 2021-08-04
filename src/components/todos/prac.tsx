@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css';
-import { ISstate as Props } from '../App';
+import '../../App.css';
+import { ISstate as Props } from './Todos';
 
 interface IProps {
     test: Props['test'];
